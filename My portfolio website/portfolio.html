@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/devdan.png" alt="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Student / Web-Developer</p>
+                    <h1>Hello I'm <span>Daniel</span><br>I'm a Nigerian</h1>
+                </div>
+            </div>
+        </div>
+
+        <!---------- about ---------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Daniel.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I was born and brought up in F.C.T Abuja, the capital of Nigeria. I am an aspiring Full stack website developer and an IT enthusiast.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interface</li>
+                                <li><span>Web Development</span><br>Front end web developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>April 2023 - August 2023</span><br>SIWES trainee at Veritas University</li>
+                                <li><span>March 2024 - </span><br>Intern in the software development and web administrators section at the ICT unit in Veritas University Abuja</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2024</span><br>National Diploma in Computer Science at Dorben Polytechnic, Abuja.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------- services -------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae nisi ab itaque expedita repudiandae, libero temporibus, voluptates inventore eum facere nostrum! Architecto commodi fuga, quis unde sint tempora veniam.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae nisi ab itaque expedita repudiandae, libero temporibus, voluptates inventore eum facere nostrum! Architecto commodi fuga, quis unde sint tempora veniam.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Backend development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae nisi ab itaque expedita repudiandae, libero temporibus, voluptates inventore eum facere nostrum! Architecto commodi fuga, quis unde sint tempora veniam.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------- portfolio ------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Fully responsive webpages</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Trusted and secured URLs</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Adaptive on all operating systems</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="seemore.html" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!--------- contact ---------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>ukaegbudan16@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>08051813320</p>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="contact.php" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ copyright(the footer and its elements) ------>
+    <footer class="footer">
+        <p>&copy;2024 Daniel Ukaegbu all rights reserved.</p>
+    </footer>
+
+   
+    <script src="/portfolio.js">
+        
+    </script>
+</body>
+</html>
